@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS ams_db;
+USE ams_db;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  reg_id VARCHAR(50) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  role ENUM('admin', 'student') NOT NULL
+);
